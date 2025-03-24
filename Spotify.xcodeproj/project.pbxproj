@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F4196F23FD314397C7A8C8B /* Pods_Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA59CC810CF68E075A5EC799 /* Pods_Spotify.framework */; };
+		D7429C782BFB251400DB24FC /* SearchResultDefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7429C772BFB251400DB24FC /* SearchResultDefaultTableViewCell.swift */; };
+		D7429C7A2BFB269000DB24FC /* SearchResultDefaultTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7429C792BFB269000DB24FC /* SearchResultDefaultTableViewCellViewModel.swift */; };
+		D7429C7C2BFB2B2600DB24FC /* SearchResultSubtitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7429C7B2BFB2B2600DB24FC /* SearchResultSubtitleTableViewCell.swift */; };
+		D7429C7E2BFB2DFC00DB24FC /* SearchResulSubtitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7429C7D2BFB2DFC00DB24FC /* SearchResulSubtitleTableViewCell.swift */; };
+		D750598F2BD8308500145868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D750598E2BD8308500145868 /* AppDelegate.swift */; };
+		D75059912BD8308500145868 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059902BD8308500145868 /* SceneDelegate.swift */; };
+		D75059932BD8308500145868 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059922BD8308500145868 /* HomeViewController.swift */; };
+		D75059992BD8308500145868 /* Spotify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D75059972BD8308500145868 /* Spotify.xcdatamodeld */; };
+		D750599B2BD8308600145868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D750599A2BD8308600145868 /* Assets.xcassets */; };
+		D750599E2BD8308600145868 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D750599D2BD8308600145868 /* Base */; };
+		D75059AD2BD832AF00145868 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059AC2BD832AF00145868 /* TabBarViewController.swift */; };
+		D75059AF2BD832DC00145868 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059AE2BD832DC00145868 /* SearchViewController.swift */; };
+		D75059B12BD832F000145868 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059B02BD832F000145868 /* LibraryViewController.swift */; };
+		D75059B52BD8336800145868 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059B42BD8336800145868 /* AuthViewController.swift */; };
+		D75059B72BD8337500145868 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059B62BD8337500145868 /* WelcomeViewController.swift */; };
+		D75059B92BD8338200145868 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059B82BD8338200145868 /* SettingsViewController.swift */; };
+		D75059BB2BD8339900145868 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059BA2BD8339900145868 /* ProfileViewController.swift */; };
+		D75059BD2BD833A900145868 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059BC2BD833A900145868 /* PlayerViewController.swift */; };
+		D75059BF2BD833BA00145868 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059BE2BD833BA00145868 /* PlaylistViewController.swift */; };
+		D75059C12BD833D100145868 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059C02BD833D100145868 /* SearchResultsViewController.swift */; };
+		D75059C32BD833FB00145868 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059C22BD833FB00145868 /* AuthManager.swift */; };
+		D75059C52BD8340D00145868 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059C42BD8340D00145868 /* APICaller.swift */; };
+		D75059C72BD8341600145868 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059C62BD8341600145868 /* HapticsManager.swift */; };
+		D75059C92BD8342E00145868 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059C82BD8342E00145868 /* Playlist.swift */; };
+		D75059CB2BD8343800145868 /* AudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059CA2BD8343800145868 /* AudioTrack.swift */; };
+		D75059CD2BD8344000145868 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059CC2BD8344000145868 /* Artist.swift */; };
+		D75059CF2BD8344F00145868 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059CE2BD8344F00145868 /* UserProfile.swift */; };
+		D75059D12BD8475700145868 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059D02BD8475700145868 /* Extensions.swift */; };
+		D75059D32BDEC74B00145868 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059D22BDEC74B00145868 /* AuthResponse.swift */; };
+		D75059D52BE0149A00145868 /* SettingsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059D42BE0149A00145868 /* SettingsModels.swift */; };
+		D75059D72BEBEB8C00145868 /* NewReleasesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059D62BEBEB8C00145868 /* NewReleasesResponse.swift */; };
+		D75059D92BED5CC600145868 /* APIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059D82BED5CC600145868 /* APIImage.swift */; };
+		D75059DB2BED5FD800145868 /* FeaturedPlaylistsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059DA2BED5FD800145868 /* FeaturedPlaylistsResponse.swift */; };
+		D75059DD2BED695D00145868 /* RecommendedGenresResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059DC2BED695D00145868 /* RecommendedGenresResponse.swift */; };
+		D75059DF2BED6BC100145868 /* RecommendationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059DE2BED6BC100145868 /* RecommendationsResponse.swift */; };
+		D75059E22BEE076500145868 /* NewReleaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059E12BEE076500145868 /* NewReleaseCollectionViewCell.swift */; };
+		D75059E42BEE078A00145868 /* FeaturedPlaylistCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059E32BEE078A00145868 /* FeaturedPlaylistCollectionViewCell.swift */; };
+		D75059E62BEE07CB00145868 /* RecommendedTrackCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059E52BEE07CB00145868 /* RecommendedTrackCollectionViewCell.swift */; };
+		D75059E82BEF512D00145868 /* NewReleasesCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059E72BEF512D00145868 /* NewReleasesCellViewModel.swift */; };
+		D75059EA2BEF625200145868 /* FeaturedPlaylistCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059E92BEF625200145868 /* FeaturedPlaylistCellViewModel.swift */; };
+		D75059EC2BEF628300145868 /* RecommendedTrackCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75059EB2BEF628300145868 /* RecommendedTrackCellViewModel.swift */; };
+		D75D29562BFBBE91000A8A0A /* PlaybackPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75D29552BFBBE91000A8A0A /* PlaybackPresenter.swift */; };
+		D75D29582BFBCA97000A8A0A /* PlayerControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75D29572BFBCA97000A8A0A /* PlayerControlsView.swift */; };
+		D783045C2C0110EA00A51A6E /* LibraryPlaylistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783045B2C0110EA00A51A6E /* LibraryPlaylistsViewController.swift */; };
+		D783045E2C01110800A51A6E /* LibraryAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783045D2C01110800A51A6E /* LibraryAlbumsViewController.swift */; };
+		D78304602C0118E100A51A6E /* LibraryToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783045F2C0118E100A51A6E /* LibraryToggleView.swift */; };
+		D78304622C01BADA00A51A6E /* LibraryPlaylistsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78304612C01BADA00A51A6E /* LibraryPlaylistsResponse.swift */; };
+		D78304642C01BC6200A51A6E /* ActionLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78304632C01BC6200A51A6E /* ActionLabelView.swift */; };
+		D791CE912C04F3E4002DE617 /* LibraryAlbumsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D791CE902C04F3E4002DE617 /* LibraryAlbumsResponse.swift */; };
+		D79CA4CE2BEFF3C800E36E8C /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79CA4CD2BEFF3C800E36E8C /* AlbumViewController.swift */; };
+		D79CA4D02BEFF7DA00E36E8C /* AlbumDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79CA4CF2BEFF7DA00E36E8C /* AlbumDetailsResponse.swift */; };
+		D79CA4D22BEFFB7100E36E8C /* PlaylistDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79CA4D12BEFFB7100E36E8C /* PlaylistDetailsResponse.swift */; };
+		D79CA4D42BF1D6E400E36E8C /* PlaylistHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79CA4D32BF1D6E400E36E8C /* PlaylistHeaderCollectionReusableView.swift */; };
+		D79CA4D62BF1DB0900E36E8C /* PlaylistHeaderViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79CA4D52BF1DB0900E36E8C /* PlaylistHeaderViewViewModel.swift */; };
+		D79CA4D82BF3CE1200E36E8C /* TitleHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79CA4D72BF3CE1200E36E8C /* TitleHeaderCollectionReusableView.swift */; };
+		D79CA4DA2BF3D9B900E36E8C /* AlbumTrackCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79CA4D92BF3D9B900E36E8C /* AlbumTrackCollectionViewCell.swift */; };
+		D79CA4DC2BF3DB2400E36E8C /* AlbumCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79CA4DB2BF3DB2400E36E8C /* AlbumCollectionViewCellViewModel.swift */; };
+		D79CA4DE2BF3EA2800E36E8C /* GenreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79CA4DD2BF3EA2800E36E8C /* GenreCollectionViewCell.swift */; };
+		D79CA4E02BF924C600E36E8C /* AllCategoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79CA4DF2BF924C600E36E8C /* AllCategoriesResponse.swift */; };
+		D79CA4E22BF92C9200E36E8C /* CategoryCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79CA4E12BF92C9200E36E8C /* CategoryCollectionViewCellViewModel.swift */; };
+		D79CA4E42BF92EB700E36E8C /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79CA4E32BF92EB700E36E8C /* CategoryViewController.swift */; };
+		D79CA4E62BF949E800E36E8C /* SearchResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79CA4E52BF949E800E36E8C /* SearchResultResponse.swift */; };
+		D79CA4E82BF94AE000E36E8C /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79CA4E72BF94AE000E36E8C /* SearchResult.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D7638BA6324007192934EB4 /* Pods-Spotify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotify.debug.xcconfig"; path = "Target Support Files/Pods-Spotify/Pods-Spotify.debug.xcconfig"; sourceTree = "<group>"; };
+		3E512102C7BDD0DBA4549C73 /* Pods-Spotify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotify.release.xcconfig"; path = "Target Support Files/Pods-Spotify/Pods-Spotify.release.xcconfig"; sourceTree = "<group>"; };
+		CA59CC810CF68E075A5EC799 /* Pods_Spotify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spotify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7429C772BFB251400DB24FC /* SearchResultDefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultDefaultTableViewCell.swift; sourceTree = "<group>"; };
+		D7429C792BFB269000DB24FC /* SearchResultDefaultTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultDefaultTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		D7429C7B2BFB2B2600DB24FC /* SearchResultSubtitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultSubtitleTableViewCell.swift; sourceTree = "<group>"; };
+		D7429C7D2BFB2DFC00DB24FC /* SearchResulSubtitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResulSubtitleTableViewCell.swift; sourceTree = "<group>"; };
+		D750598B2BD8308400145868 /* Spotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D750598E2BD8308500145868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D75059902BD8308500145868 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D75059922BD8308500145868 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D75059982BD8308500145868 /* Spotify.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Spotify.xcdatamodel; sourceTree = "<group>"; };
+		D750599A2BD8308600145868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D750599D2BD8308600145868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D750599F2BD8308600145868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D75059AC2BD832AF00145868 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		D75059AE2BD832DC00145868 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D75059B02BD832F000145868 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		D75059B42BD8336800145868 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		D75059B62BD8337500145868 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		D75059B82BD8338200145868 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D75059BA2BD8339900145868 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D75059BC2BD833A900145868 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		D75059BE2BD833BA00145868 /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		D75059C02BD833D100145868 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		D75059C22BD833FB00145868 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		D75059C42BD8340D00145868 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		D75059C62BD8341600145868 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		D75059C82BD8342E00145868 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		D75059CA2BD8343800145868 /* AudioTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrack.swift; sourceTree = "<group>"; };
+		D75059CC2BD8344000145868 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		D75059CE2BD8344F00145868 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		D75059D02BD8475700145868 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D75059D22BDEC74B00145868 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		D75059D42BE0149A00145868 /* SettingsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModels.swift; sourceTree = "<group>"; };
+		D75059D62BEBEB8C00145868 /* NewReleasesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleasesResponse.swift; sourceTree = "<group>"; };
+		D75059D82BED5CC600145868 /* APIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIImage.swift; sourceTree = "<group>"; };
+		D75059DA2BED5FD800145868 /* FeaturedPlaylistsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPlaylistsResponse.swift; sourceTree = "<group>"; };
+		D75059DC2BED695D00145868 /* RecommendedGenresResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedGenresResponse.swift; sourceTree = "<group>"; };
+		D75059DE2BED6BC100145868 /* RecommendationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsResponse.swift; sourceTree = "<group>"; };
+		D75059E12BEE076500145868 /* NewReleaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		D75059E32BEE078A00145868 /* FeaturedPlaylistCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPlaylistCollectionViewCell.swift; sourceTree = "<group>"; };
+		D75059E52BEE07CB00145868 /* RecommendedTrackCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedTrackCollectionViewCell.swift; sourceTree = "<group>"; };
+		D75059E72BEF512D00145868 /* NewReleasesCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleasesCellViewModel.swift; sourceTree = "<group>"; };
+		D75059E92BEF625200145868 /* FeaturedPlaylistCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPlaylistCellViewModel.swift; sourceTree = "<group>"; };
+		D75059EB2BEF628300145868 /* RecommendedTrackCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedTrackCellViewModel.swift; sourceTree = "<group>"; };
+		D75D29552BFBBE91000A8A0A /* PlaybackPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackPresenter.swift; sourceTree = "<group>"; };
+		D75D29572BFBCA97000A8A0A /* PlayerControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControlsView.swift; sourceTree = "<group>"; };
+		D783045B2C0110EA00A51A6E /* LibraryPlaylistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryPlaylistsViewController.swift; sourceTree = "<group>"; };
+		D783045D2C01110800A51A6E /* LibraryAlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryAlbumsViewController.swift; sourceTree = "<group>"; };
+		D783045F2C0118E100A51A6E /* LibraryToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryToggleView.swift; sourceTree = "<group>"; };
+		D78304612C01BADA00A51A6E /* LibraryPlaylistsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryPlaylistsResponse.swift; sourceTree = "<group>"; };
+		D78304632C01BC6200A51A6E /* ActionLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionLabelView.swift; sourceTree = "<group>"; };
+		D791CE902C04F3E4002DE617 /* LibraryAlbumsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryAlbumsResponse.swift; sourceTree = "<group>"; };
+		D79CA4CD2BEFF3C800E36E8C /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		D79CA4CF2BEFF7DA00E36E8C /* AlbumDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsResponse.swift; sourceTree = "<group>"; };
+		D79CA4D12BEFFB7100E36E8C /* PlaylistDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailsResponse.swift; sourceTree = "<group>"; };
+		D79CA4D32BF1D6E400E36E8C /* PlaylistHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		D79CA4D52BF1DB0900E36E8C /* PlaylistHeaderViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistHeaderViewViewModel.swift; sourceTree = "<group>"; };
+		D79CA4D72BF3CE1200E36E8C /* TitleHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		D79CA4D92BF3D9B900E36E8C /* AlbumTrackCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTrackCollectionViewCell.swift; sourceTree = "<group>"; };
+		D79CA4DB2BF3DB2400E36E8C /* AlbumCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		D79CA4DD2BF3EA2800E36E8C /* GenreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCollectionViewCell.swift; sourceTree = "<group>"; };
+		D79CA4DF2BF924C600E36E8C /* AllCategoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategoriesResponse.swift; sourceTree = "<group>"; };
+		D79CA4E12BF92C9200E36E8C /* CategoryCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		D79CA4E32BF92EB700E36E8C /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		D79CA4E52BF949E800E36E8C /* SearchResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultResponse.swift; sourceTree = "<group>"; };
+		D79CA4E72BF94AE000E36E8C /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D75059882BD8308400145868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F4196F23FD314397C7A8C8B /* Pods_Spotify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63E5B6AFB958864C880F03BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D7638BA6324007192934EB4 /* Pods-Spotify.debug.xcconfig */,
+				3E512102C7BDD0DBA4549C73 /* Pods-Spotify.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D7429C762BFB24F000DB24FC /* SearchResultCells */ = {
+			isa = PBXGroup;
+			children = (
+				D7429C772BFB251400DB24FC /* SearchResultDefaultTableViewCell.swift */,
+				D7429C7B2BFB2B2600DB24FC /* SearchResultSubtitleTableViewCell.swift */,
+			);
+			path = SearchResultCells;
+			sourceTree = "<group>";
+		};
+		D75059822BD8308400145868 = {
+			isa = PBXGroup;
+			children = (
+				D750598D2BD8308400145868 /* Spotify */,
+				D750598C2BD8308400145868 /* Products */,
+				63E5B6AFB958864C880F03BF /* Pods */,
+				EF1C1A6F7E9BB29721CE749B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D750598C2BD8308400145868 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D750598B2BD8308400145868 /* Spotify.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D750598D2BD8308400145868 /* Spotify */ = {
+			isa = PBXGroup;
+			children = (
+				D75D29542BFBBE7B000A8A0A /* Presenter */,
+				D75059AB2BD830C300145868 /* Resources */,
+				D75059AA2BD830BC00145868 /* Managers */,
+				D75059A72BD830A000145868 /* Models */,
+				D75059A92BD830B000145868 /* ViewModels */,
+				D75059A62BD8309900145868 /* Views */,
+				D75059A52BD8309200145868 /* Controllers */,
+				D750599F2BD8308600145868 /* Info.plist */,
+				D75059972BD8308500145868 /* Spotify.xcdatamodeld */,
+			);
+			path = Spotify;
+			sourceTree = "<group>";
+		};
+		D75059A52BD8309200145868 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D75059B32BD8335400145868 /* Other */,
+				D75059B22BD8334400145868 /* Core */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D75059A62BD8309900145868 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D7429C762BFB24F000DB24FC /* SearchResultCells */,
+				D79CA4D32BF1D6E400E36E8C /* PlaylistHeaderCollectionReusableView.swift */,
+				D79CA4D72BF3CE1200E36E8C /* TitleHeaderCollectionReusableView.swift */,
+				D75059E02BEE073F00145868 /* Browse */,
+				D750599C2BD8308600145868 /* LaunchScreen.storyboard */,
+				D783045F2C0118E100A51A6E /* LibraryToggleView.swift */,
+				D78304632C01BC6200A51A6E /* ActionLabelView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D75059A72BD830A000145868 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D75059C82BD8342E00145868 /* Playlist.swift */,
+				D75059CA2BD8343800145868 /* AudioTrack.swift */,
+				D75059CC2BD8344000145868 /* Artist.swift */,
+				D75059CE2BD8344F00145868 /* UserProfile.swift */,
+				D75059D22BDEC74B00145868 /* AuthResponse.swift */,
+				D75059D42BE0149A00145868 /* SettingsModels.swift */,
+				D75059D62BEBEB8C00145868 /* NewReleasesResponse.swift */,
+				D79CA4DF2BF924C600E36E8C /* AllCategoriesResponse.swift */,
+				D75059D82BED5CC600145868 /* APIImage.swift */,
+				D75059DA2BED5FD800145868 /* FeaturedPlaylistsResponse.swift */,
+				D75059DC2BED695D00145868 /* RecommendedGenresResponse.swift */,
+				D75059DE2BED6BC100145868 /* RecommendationsResponse.swift */,
+				D79CA4CF2BEFF7DA00E36E8C /* AlbumDetailsResponse.swift */,
+				D79CA4D12BEFFB7100E36E8C /* PlaylistDetailsResponse.swift */,
+				D79CA4E52BF949E800E36E8C /* SearchResultResponse.swift */,
+				D79CA4E72BF94AE000E36E8C /* SearchResult.swift */,
+				D78304612C01BADA00A51A6E /* LibraryPlaylistsResponse.swift */,
+				D791CE902C04F3E4002DE617 /* LibraryAlbumsResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D75059A92BD830B000145868 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D75059E72BEF512D00145868 /* NewReleasesCellViewModel.swift */,
+				D75059E92BEF625200145868 /* FeaturedPlaylistCellViewModel.swift */,
+				D75059EB2BEF628300145868 /* RecommendedTrackCellViewModel.swift */,
+				D79CA4D52BF1DB0900E36E8C /* PlaylistHeaderViewViewModel.swift */,
+				D79CA4DB2BF3DB2400E36E8C /* AlbumCollectionViewCellViewModel.swift */,
+				D79CA4E12BF92C9200E36E8C /* CategoryCollectionViewCellViewModel.swift */,
+				D7429C792BFB269000DB24FC /* SearchResultDefaultTableViewCellViewModel.swift */,
+				D7429C7D2BFB2DFC00DB24FC /* SearchResulSubtitleTableViewCell.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D75059AA2BD830BC00145868 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D75059C22BD833FB00145868 /* AuthManager.swift */,
+				D75059C42BD8340D00145868 /* APICaller.swift */,
+				D75059C62BD8341600145868 /* HapticsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		D75059AB2BD830C300145868 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D750599A2BD8308600145868 /* Assets.xcassets */,
+				D750598E2BD8308500145868 /* AppDelegate.swift */,
+				D75059902BD8308500145868 /* SceneDelegate.swift */,
+				D75059D02BD8475700145868 /* Extensions.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D75059B22BD8334400145868 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D75059922BD8308500145868 /* HomeViewController.swift */,
+				D75059AC2BD832AF00145868 /* TabBarViewController.swift */,
+				D75059AE2BD832DC00145868 /* SearchViewController.swift */,
+				D75059B02BD832F000145868 /* LibraryViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D75059B32BD8335400145868 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				D783045A2C0110CA00A51A6E /* Library */,
+				D75059B62BD8337500145868 /* WelcomeViewController.swift */,
+				D75059B42BD8336800145868 /* AuthViewController.swift */,
+				D75059B82BD8338200145868 /* SettingsViewController.swift */,
+				D75059BA2BD8339900145868 /* ProfileViewController.swift */,
+				D75059BC2BD833A900145868 /* PlayerViewController.swift */,
+				D75059BE2BD833BA00145868 /* PlaylistViewController.swift */,
+				D75059C02BD833D100145868 /* SearchResultsViewController.swift */,
+				D79CA4CD2BEFF3C800E36E8C /* AlbumViewController.swift */,
+				D79CA4E32BF92EB700E36E8C /* CategoryViewController.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		D75059E02BEE073F00145868 /* Browse */ = {
+			isa = PBXGroup;
+			children = (
+				D75059E12BEE076500145868 /* NewReleaseCollectionViewCell.swift */,
+				D75059E32BEE078A00145868 /* FeaturedPlaylistCollectionViewCell.swift */,
+				D75059E52BEE07CB00145868 /* RecommendedTrackCollectionViewCell.swift */,
+				D79CA4DD2BF3EA2800E36E8C /* GenreCollectionViewCell.swift */,
+				D79CA4D92BF3D9B900E36E8C /* AlbumTrackCollectionViewCell.swift */,
+				D75D29572BFBCA97000A8A0A /* PlayerControlsView.swift */,
+			);
+			path = Browse;
+			sourceTree = "<group>";
+		};
+		D75D29542BFBBE7B000A8A0A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D75D29552BFBBE91000A8A0A /* PlaybackPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D783045A2C0110CA00A51A6E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D783045B2C0110EA00A51A6E /* LibraryPlaylistsViewController.swift */,
+				D783045D2C01110800A51A6E /* LibraryAlbumsViewController.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		EF1C1A6F7E9BB29721CE749B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA59CC810CF68E075A5EC799 /* Pods_Spotify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D750598A2BD8308400145868 /* Spotify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D75059A22BD8308600145868 /* Build configuration list for PBXNativeTarget "Spotify" */;
+			buildPhases = (
+				BC05966FF034735C91C95DC1 /* [CP] Check Pods Manifest.lock */,
+				D75059872BD8308400145868 /* Sources */,
+				D75059882BD8308400145868 /* Frameworks */,
+				D75059892BD8308400145868 /* Resources */,
+				0056C9FEB3344981FC314F2D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spotify;
+			productName = Spotify;
+			productReference = D750598B2BD8308400145868 /* Spotify.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D75059832BD8308400145868 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					D750598A2BD8308400145868 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = D75059862BD8308400145868 /* Build configuration list for PBXProject "Spotify" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D75059822BD8308400145868;
+			productRefGroup = D750598C2BD8308400145868 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D750598A2BD8308400145868 /* Spotify */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D75059892BD8308400145868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D750599B2BD8308600145868 /* Assets.xcassets in Resources */,
+				D750599E2BD8308600145868 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0056C9FEB3344981FC314F2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spotify/Pods-Spotify-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spotify/Pods-Spotify-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Spotify/Pods-Spotify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC05966FF034735C91C95DC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spotify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D75059872BD8308400145868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7429C782BFB251400DB24FC /* SearchResultDefaultTableViewCell.swift in Sources */,
+				D75059E82BEF512D00145868 /* NewReleasesCellViewModel.swift in Sources */,
+				D79CA4E22BF92C9200E36E8C /* CategoryCollectionViewCellViewModel.swift in Sources */,
+				D75059B72BD8337500145868 /* WelcomeViewController.swift in Sources */,
+				D75059E22BEE076500145868 /* NewReleaseCollectionViewCell.swift in Sources */,
+				D75059E62BEE07CB00145868 /* RecommendedTrackCollectionViewCell.swift in Sources */,
+				D75059EC2BEF628300145868 /* RecommendedTrackCellViewModel.swift in Sources */,
+				D75059EA2BEF625200145868 /* FeaturedPlaylistCellViewModel.swift in Sources */,
+				D75059CB2BD8343800145868 /* AudioTrack.swift in Sources */,
+				D78304642C01BC6200A51A6E /* ActionLabelView.swift in Sources */,
+				D783045E2C01110800A51A6E /* LibraryAlbumsViewController.swift in Sources */,
+				D75059CF2BD8344F00145868 /* UserProfile.swift in Sources */,
+				D75059AF2BD832DC00145868 /* SearchViewController.swift in Sources */,
+				D75059DD2BED695D00145868 /* RecommendedGenresResponse.swift in Sources */,
+				D75059D52BE0149A00145868 /* SettingsModels.swift in Sources */,
+				D7429C7E2BFB2DFC00DB24FC /* SearchResulSubtitleTableViewCell.swift in Sources */,
+				D75059932BD8308500145868 /* HomeViewController.swift in Sources */,
+				D79CA4CE2BEFF3C800E36E8C /* AlbumViewController.swift in Sources */,
+				D75D29582BFBCA97000A8A0A /* PlayerControlsView.swift in Sources */,
+				D79CA4DC2BF3DB2400E36E8C /* AlbumCollectionViewCellViewModel.swift in Sources */,
+				D75059D92BED5CC600145868 /* APIImage.swift in Sources */,
+				D75059B92BD8338200145868 /* SettingsViewController.swift in Sources */,
+				D79CA4D22BEFFB7100E36E8C /* PlaylistDetailsResponse.swift in Sources */,
+				D75059D72BEBEB8C00145868 /* NewReleasesResponse.swift in Sources */,
+				D75059C32BD833FB00145868 /* AuthManager.swift in Sources */,
+				D79CA4D82BF3CE1200E36E8C /* TitleHeaderCollectionReusableView.swift in Sources */,
+				D7429C7A2BFB269000DB24FC /* SearchResultDefaultTableViewCellViewModel.swift in Sources */,
+				D75059BF2BD833BA00145868 /* PlaylistViewController.swift in Sources */,
+				D75059C12BD833D100145868 /* SearchResultsViewController.swift in Sources */,
+				D75059D12BD8475700145868 /* Extensions.swift in Sources */,
+				D75059C52BD8340D00145868 /* APICaller.swift in Sources */,
+				D791CE912C04F3E4002DE617 /* LibraryAlbumsResponse.swift in Sources */,
+				D79CA4DE2BF3EA2800E36E8C /* GenreCollectionViewCell.swift in Sources */,
+				D75059C72BD8341600145868 /* HapticsManager.swift in Sources */,
+				D79CA4D42BF1D6E400E36E8C /* PlaylistHeaderCollectionReusableView.swift in Sources */,
+				D79CA4D02BEFF7DA00E36E8C /* AlbumDetailsResponse.swift in Sources */,
+				D750598F2BD8308500145868 /* AppDelegate.swift in Sources */,
+				D79CA4D62BF1DB0900E36E8C /* PlaylistHeaderViewViewModel.swift in Sources */,
+				D78304602C0118E100A51A6E /* LibraryToggleView.swift in Sources */,
+				D75059BD2BD833A900145868 /* PlayerViewController.swift in Sources */,
+				D75059C92BD8342E00145868 /* Playlist.swift in Sources */,
+				D75059992BD8308500145868 /* Spotify.xcdatamodeld in Sources */,
+				D79CA4E02BF924C600E36E8C /* AllCategoriesResponse.swift in Sources */,
+				D75059BB2BD8339900145868 /* ProfileViewController.swift in Sources */,
+				D783045C2C0110EA00A51A6E /* LibraryPlaylistsViewController.swift in Sources */,
+				D79CA4E82BF94AE000E36E8C /* SearchResult.swift in Sources */,
+				D75059B52BD8336800145868 /* AuthViewController.swift in Sources */,
+				D75059B12BD832F000145868 /* LibraryViewController.swift in Sources */,
+				D79CA4DA2BF3D9B900E36E8C /* AlbumTrackCollectionViewCell.swift in Sources */,
+				D75D29562BFBBE91000A8A0A /* PlaybackPresenter.swift in Sources */,
+				D75059DB2BED5FD800145868 /* FeaturedPlaylistsResponse.swift in Sources */,
+				D75059AD2BD832AF00145868 /* TabBarViewController.swift in Sources */,
+				D79CA4E62BF949E800E36E8C /* SearchResultResponse.swift in Sources */,
+				D75059CD2BD8344000145868 /* Artist.swift in Sources */,
+				D75059D32BDEC74B00145868 /* AuthResponse.swift in Sources */,
+				D79CA4E42BF92EB700E36E8C /* CategoryViewController.swift in Sources */,
+				D75059E42BEE078A00145868 /* FeaturedPlaylistCollectionViewCell.swift in Sources */,
+				D78304622C01BADA00A51A6E /* LibraryPlaylistsResponse.swift in Sources */,
+				D75059912BD8308500145868 /* SceneDelegate.swift in Sources */,
+				D7429C7C2BFB2B2600DB24FC /* SearchResultSubtitleTableViewCell.swift in Sources */,
+				D75059DF2BED6BC100145868 /* RecommendationsResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D750599C2BD8308600145868 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D750599D2BD8308600145868 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D75059A02BD8308600145868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D75059A12BD8308600145868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D75059A32BD8308600145868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D7638BA6324007192934EB4 /* Pods-Spotify.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4H326U4KA3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Spotify/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihneaamihailesei.Spotify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D75059A42BD8308600145868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E512102C7BDD0DBA4549C73 /* Pods-Spotify.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4H326U4KA3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Spotify/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihneaamihailesei.Spotify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D75059862BD8308400145868 /* Build configuration list for PBXProject "Spotify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D75059A02BD8308600145868 /* Debug */,
+				D75059A12BD8308600145868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D75059A22BD8308600145868 /* Build configuration list for PBXNativeTarget "Spotify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D75059A32BD8308600145868 /* Debug */,
+				D75059A42BD8308600145868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D75059972BD8308500145868 /* Spotify.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D75059982BD8308500145868 /* Spotify.xcdatamodel */,
+			);
+			currentVersion = D75059982BD8308500145868 /* Spotify.xcdatamodel */;
+			path = Spotify.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D75059832BD8308400145868 /* Project object */;
+}
