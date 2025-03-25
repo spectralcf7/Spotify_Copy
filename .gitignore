@@ -1,0 +1,10 @@
+# Xcode
+.DS_Store
+
+Spotify.xcodeproj/project.xcworkspace/xcshareddata/*
+Spotify.xcodeproj/project.xcworkspace/xcuserdata/*
+Spotify.xcodeproj/xcuserdata/*
+Spotify.xcworkspace/xcshareddata/*
+Spotify.xcworkspace/xcuserdata/*
+
+Pods/*
